@@ -1,0 +1,22 @@
+CREATE TABLE sistema_bancario(
+
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+nome TEXT NOT NULL,
+cpf TEXT NOT NULL UNIQUE,
+rg TEXT NOT NULL UNIQUE,
+data_nascimento TEXT NOT NULL, 
+sexo TEXT NOT NULL,
+nome_mae TEXT NOT NULL,
+nome_pai TEXT NOT NULL,
+email TEXT NOT NULL UNIQUE,
+cep TEXT NOT NULL,
+endereco TEXT NOT NULL,
+numero TEXT  NOT NULL,
+bairro TEXT NOT NULL, 
+cidade TEXT NOT NULL,
+estado TEXT NOT NULL,
+telefone TEXT NOT NULL UNIQUE,
+saldo TEXT,
+conta_corrente TEXT NOT NULL UNIQUE,
+agencia TEXT NOT NULL
+);
